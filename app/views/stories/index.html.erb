@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-md-12">
+    <h1><%= @story[:title] %></h1>
+  </div>
+  <div class="col-md-12">
+    <div class="row">
+      <% @characters.each do |c| %>
+        <div class="col-sm-3">
+          <img src="<%= c[:thumbnail][:path] %>/portrait_medium.jpg" alt="<%= c[:name] %>">
+          <h4><%= c[:name] %></h4>
+        </div>
+      <% end %>
+    </div>
+
+    <p>
+      <small><%= raw @attributtion_text %></small>
+    </p>
+  </div>
+
+</div>
