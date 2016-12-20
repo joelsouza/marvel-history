@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Dependencies
+* Create a [Marvel Developer account](https://developer.marvel.com/account)
 
-Things you may want to cover:
+## Up N' Running
 
-* Ruby version
+* Rename ```.env.development.example``` to ```.env.development``` and fill with Marvel Developer credentials
+* Run ```bundle install``` and ```rails s```
+* Open [localhost:3000](http://localhost:3000)
 
-* System dependencies
+## Todo
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Caching

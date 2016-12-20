@@ -1,20 +1,17 @@
-<div class="row">
-  <div class="col-md-12">
-    <h1><%= @story[:title] %></h1>
-  </div>
-  <div class="col-md-12">
-    <div class="row">
-      <% @characters.each do |c| %>
-        <div class="col-sm-3">
-          <img src="<%= c[:thumbnail][:path] %>/portrait_medium.jpg" alt="<%= c[:name] %>">
-          <h4><%= c[:name] %></h4>
-        </div>
-      <% end %>
+<h1><%= @story[:title] %></h1>
+<div class="mdl-grid">
+  <% @characters.each do |c| %>
+    <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+      <div class="mdl-card__media">
+        <img src="<%= c[:thumbnail][:path] %>/standard_incredible.jpg" alt="<%= c[:name] %>">
+      </div>
+      <div class="mdl-card__title">
+        <h3><%= c[:name] %></h3>
+      </div>
     </div>
-
-    <p>
-      <small><%= raw @attributtion_text %></small>
-    </p>
-  </div>
-
+  <% end %>
 </div>
+
+<p>
+  <small><%= raw @attributtion_text %></small>
+</p>
